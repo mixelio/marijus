@@ -1,0 +1,140 @@
+.information {
+
+  @include onBigTablet {
+    max-width: 50%;
+  }
+  &__title {
+    margin-bottom: 18px;
+  }
+  &__link {
+    display: block;
+    align-items: center;
+    margin-bottom: 36px;
+    padding-left: 20px;
+    position: relative;
+
+    color: #5F5F5F;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 14px;
+      height: 20px;
+      background-image: url("/images/icons/map-point.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__price {
+    display: block;
+    margin-bottom: 20px;
+
+    color: #143B5D;
+    font-size: 35px;
+    font-weight: 400;
+  }
+
+  &__key-details {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+
+  &__subtitle {
+    margin-bottom: 24px;
+  }
+
+  &__key-details-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+
+    padding-left: 20px;
+
+    border-left: 2px solid #143B5D;
+  }
+
+  &__key-details-item {
+    flex: 1 1 30%;
+  }
+
+  &__key-detaiil-name {
+    margin-bottom: 3px;
+    color: #272727;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  &__key-detail-value {
+    color: #272727;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__overview {
+    margin-bottom: 26px;
+    padding-top: 34px;
+    border-top: 1px solid #eee;
+  }
+
+  &__text {
+    max-width: 550px;
+    color: #272727;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__amenities {
+    margin-bottom: 72px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+
+
+
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+
+      padding-left: 24px;
+      border-left: 2px solid #143B5D;
+    }
+
+    &-item {
+      flex: 0 1 25%;
+      padding-left: 24px;
+
+      color: #272727;
+      font-size: 18px;
+      font-weight: 400;
+
+      @include onBigTablet {
+        flex: 0 1 18%;
+      }
+
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 18px;
+        height: 12px;
+        background-image: url("/images/icons/wifi.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

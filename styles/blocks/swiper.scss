@@ -1,0 +1,16 @@
+.swiper {
+  height: 50vh;
+  
+  &-wrapper {
+
+  }
+  &-slide {
+    height: auto;
+  }
+  &-image {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+  }
+}

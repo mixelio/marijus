@@ -1,0 +1,140 @@
+.contact {
+  margin-bottom: 68px;
+  padding: 42px 48px 48px;
+  height: fit-content;
+  border: 1px solid #EEE;
+  background: #F7F7F7;
+
+  @include onTablet {
+    padding: 22px 18px 18px;
+  }
+
+  @include onBigTablet {
+    padding: 42px 48px 48px;
+  }
+
+
+  &__title {
+    margin-bottom: 48px;
+    color: #143B5D;
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  &__person-block {
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__photo-box {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__info-box {
+
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 16px;
+
+    color: #143B5D;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  &__phone {
+    display: block;
+    padding-left: 32px;
+    position: relative;
+
+    color: #5F5F5F;
+    font-size: 16px;
+    font-weight: 400;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-image: url("/images/icons/phone.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    input[type = text], textarea {
+      height: 50px;
+      padding-left: 20px;
+      border: 1px solid #EEE;
+      background: #FFF;
+    }
+    textarea {
+      padding-top: 15px;
+      height: 100px;
+      resize: none;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__name-fields-block {
+    
+    @include onBigTablet {
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: 50px;
+
+      @include onBigTablet {
+        flex: 1;
+      }
+      &:not(:last-child) {
+        margin-bottom: 10px;
+
+        @include onBigTablet {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__button {
+    height: 50px;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    background: #3D6E71;
+    border: 1px solid #3D6E71;
+
+    transition-duration: 300ms;
+
+    &:hover {
+      box-shadow: 0 3px 5px #000;
+      transform: translateY(-3px);
+    }
+  }
+}
