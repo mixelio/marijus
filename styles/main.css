@@ -254,7 +254,7 @@ input::-webkit-search-results-decoration {
   left: 0;
   width: 14px;
   height: 20px;
-  background-image: url("/images/icons/map-point.svg");
+  background-image: url("../images/icons/map-point.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
